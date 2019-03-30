@@ -1,1 +1,1 @@
-# MobileML-DEMO
+# MobileMachineLearning-DEMO
