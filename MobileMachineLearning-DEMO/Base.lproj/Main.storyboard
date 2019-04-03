@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MobileMachineLearning_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vsx-JV-2gg">
+                                <rect key="frame" x="0.0" y="88" width="375" height="500"/>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.63529411759999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vsx-JV-2gg" secondAttribute="height" multiplier="375:500" id="87k-Yt-lBj"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Taa-F9-Tca">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="fps: xx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X95-vE-iTt">
+                                        <rect key="frame" x="251.33333333333334" y="13" width="107.66666666666666" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="vfs-ki-Qmc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="9"/>
+                                        <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inference: xxx mm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fWS-q9-z8i">
+                                        <rect key="frame" x="16.000000000000007" y="13" width="107.66666666666669" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="Zbs-1x-xit"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="9"/>
+                                        <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Execution: xxx mm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XAu-0d-RpV">
+                                        <rect key="frame" x="133.66666666666666" y="13" width="107.66666666666666" height="18"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="qA1-lQ-BnT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="9"/>
+                                        <color key="textColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.80182470029999997" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4gf-Z7-EfA"/>
+                                    <constraint firstItem="X95-vE-iTt" firstAttribute="leading" secondItem="XAu-0d-RpV" secondAttribute="trailing" constant="10" id="LWQ-zc-7Cs"/>
+                                    <constraint firstItem="X95-vE-iTt" firstAttribute="centerY" secondItem="Taa-F9-Tca" secondAttribute="centerY" id="QAV-RT-nig"/>
+                                    <constraint firstAttribute="trailing" secondItem="X95-vE-iTt" secondAttribute="trailing" constant="16" id="Zl1-uk-ZuF"/>
+                                    <constraint firstItem="fWS-q9-z8i" firstAttribute="centerY" secondItem="Taa-F9-Tca" secondAttribute="centerY" id="dxt-dd-Aex"/>
+                                    <constraint firstItem="XAu-0d-RpV" firstAttribute="baseline" secondItem="fWS-q9-z8i" secondAttribute="baseline" id="l9b-nt-boD"/>
+                                    <constraint firstItem="XAu-0d-RpV" firstAttribute="width" secondItem="fWS-q9-z8i" secondAttribute="width" id="n3F-i9-DG1"/>
+                                    <constraint firstItem="fWS-q9-z8i" firstAttribute="leading" secondItem="Taa-F9-Tca" secondAttribute="leading" constant="16" id="rT6-mX-DX3"/>
+                                    <constraint firstItem="XAu-0d-RpV" firstAttribute="leading" secondItem="fWS-q9-z8i" secondAttribute="trailing" constant="10" id="raz-0b-UWh"/>
+                                    <constraint firstItem="X95-vE-iTt" firstAttribute="width" secondItem="fWS-q9-z8i" secondAttribute="width" id="vnE-40-woW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Taa-F9-Tca" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="45h-cH-MDa"/>
+                            <constraint firstItem="Taa-F9-Tca" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7sR-ec-RjB"/>
+                            <constraint firstItem="vsx-JV-2gg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V9d-mh-U2e"/>
+                            <constraint firstItem="vsx-JV-2gg" firstAttribute="top" secondItem="Taa-F9-Tca" secondAttribute="bottom" id="gnG-vr-URO"/>
+                            <constraint firstItem="vsx-JV-2gg" firstAttribute="width" secondItem="vsx-JV-2gg" secondAttribute="height" multiplier="375:500" id="iQa-28-Jre"/>
+                            <constraint firstItem="Taa-F9-Tca" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lFq-3q-pbZ"/>
+                            <constraint firstItem="vsx-JV-2gg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qFg-Ws-554"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="etimeLabel" destination="XAu-0d-RpV" id="ULo-X9-sUU"/>
+                        <outlet property="fpsLabel" destination="X95-vE-iTt" id="SwZ-1y-nmM"/>
+                        <outlet property="inferenceLabel" destination="fWS-q9-z8i" id="UXC-XZ-NfX"/>
+                        <outlet property="videoPreview" destination="vsx-JV-2gg" id="fBl-Nx-lJ0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
